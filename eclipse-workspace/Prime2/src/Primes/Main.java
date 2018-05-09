@@ -1,12 +1,10 @@
-package Primes;
+package primes;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Main {
-
-	
 	public static void main(String[]args){
-	
+		
 		//time start
 		long tStart = System.currentTimeMillis();
 
@@ -37,4 +35,3 @@ public class Main {
 	}
 }
 
-	
