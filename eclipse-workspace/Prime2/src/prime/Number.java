@@ -1,4 +1,4 @@
-package primes;
+package prime;
 
 public class Number implements Runnable{
 

@@ -1,4 +1,4 @@
-package primes;
+package prime;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -12,7 +12,7 @@ public class Main {
     ExecutorService executor = Executors.newFixedThreadPool(5);//creating a pool of 5 threads  
     
     	for (int i =1;i<Number.total;i++)  {  
-    		synchronized(Number.class) {//attempt at synching class creation to stop two of same i being passed in
+    		synchronized(Number.class) {// synch class creation to stop two of same i being passed in
     	Runnable  worker = new Number(i);  //creating new object passing in i
         executor.execute(worker); 
       } 
